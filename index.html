@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jana Hojdová — Czech cinematographer and director.">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>Jana Hojdová — Cinematographer &amp; Director</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%230a0a0a'/%3E%3Cpath d='M16 15h7v25c0 8-4 12-11 12H9v-7h2c3 0 5-2 5-6V15Zm15 0h7v14h12V15h7v37h-7V36H38v16h-7V15Z' fill='white'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="./styles.css?v=7">
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Jana Hojdová, home">
+        <span>Jana</span>
+        <span>Hojdová</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span>Menu</span>
+        <i aria-hidden="true"></i>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#bio">Bio</a>
+        <a href="#film">Film</a>
+        <a href="#photo">Photo</a>
+      </nav>
+
+      <a class="header-contact" href="mailto:jana@hojdova.cz?subject=Hello%20Jana">Contact</a>
+    </header>
+
+    <main id="main">
+      <section class="hero hero-without-headline" id="home" aria-label="Jana Hojdová showreel">
+        <div class="hero-media" aria-hidden="true">
+          <iframe
+            src="https://player.vimeo.com/video/1032698141?background=1&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;autopause=0"
+            title="Jana Hojdová showreel"
+            allow="autoplay; fullscreen; picture-in-picture"
+            loading="eager"
+          ></iframe>
+        </div>
+        <div class="hero-shade"></div>
+
+        <div class="hero-copy">
+          <button class="text-link hero-play" type="button" data-video="https://player.vimeo.com/video/1032698141" data-title="Jana Hojdová — Showreel">
+            <span class="play-icon" aria-hidden="true"></span>
+            Play showreel
+          </button>
+        </div>
+
+        <a class="scroll-cue" href="#bio">
+          <span>About Jana</span>
+          <span aria-hidden="true">↓</span>
+        </a>
+      </section>
+
+      <section class="section section-bio" id="bio" aria-labelledby="bio-title">
+        <div class="bio-portrait">
+          <div class="bio-portrait-frame">
+            <img src="./assets/portraits/jana-bio-on-set.jpg" alt="Jana Hojdová standing beside a cinema camera" loading="lazy">
+          </div>
+          <p class="image-caption">Jana Hojdová / Prague</p>
+        </div>
+
+        <article class="bio-copy">
+          <p class="section-index">Bio</p>
+          <h2 id="bio-title">Jana Hojdová</h2>
+          <p class="bio-role">Cinematographer · Director</p>
+          <p class="bio-lead">Jana Hojdová is a Czech cinematographer and director working across feature films, documentaries, short films and music videos.</p>
+
+          <div class="bio-columns">
+            <p>She graduated from the Cinematography Department at FAMU in Prague. Her early work received recognition at several international film festivals: <em>The Dream</em> was nominated for Best Cinematography at Camerimage in 2015 and received the Jaroslav Kučera Award from the Czech Society of Cinematographers in 2016. Her documentary <em>Chronicle — Petr Hojda</em> was nominated at Kamera Oko in 2015.</p>
+            <p>As Director of Photography, Jana shot Šimon Holý’s <em>Mirrors in the Dark</em>, <em>And Then There Was Love…</em>, <em>Hello, Welcome</em> and <em>Chica Checa</em>. The films premiered at the Karlovy Vary International Film Festival; <em>Chica Checa</em> entered the Crystal Globe Competition in 2026.</p>
+            <p>She also worked as Director of Photography on Haruna Honcoop’s <em>Annexions</em>, served on the international jury at Kamera Oko and on the FAMUFEST jury, and founded the production company Bridge Films.</p>
+            <p>In 2026, Jana made her feature-length directorial debut with <em>Robert Richardson: The White Devil</em>, a documentary about the three-time Academy Award-winning cinematographer. The film premiered in the Special Screenings section at the Karlovy Vary International Film Festival.</p>
+          </div>
+
+          <div class="bio-links">
+            <a href="mailto:jana@hojdova.cz?subject=Hello%20Jana">Get in touch <span aria-hidden="true">↗</span></a>
+            <a href="https://www.bridge-films.com/" target="_blank" rel="noreferrer">Bridge Films <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </section>
+
+      <section class="section section-dark" id="film" aria-labelledby="film-title">
+        <div class="section-heading">
+          <p class="section-index">Film</p>
+          <h2 id="film-title">Selected work</h2>
+          <p class="section-intro">Feature films, documentaries, shorts and music videos.</p>
+        </div>
+
+        <div class="film-grid" id="film-grid" aria-live="polite"></div>
+
+        <div class="section-action">
+          <button class="outline-button" id="show-all-films" type="button" aria-expanded="false">
+            View all films <span aria-hidden="true">＋</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section section-light photo-section" id="photo" aria-labelledby="photo-title">
+        <div class="section-heading heading-split">
+          <div>
+            <p class="section-index">Photo</p>
+            <h2 id="photo-title">Still frames</h2>
+          </div>
+          <p class="section-intro">Light, gesture and the moment before the scene changes.</p>
+        </div>
+
+        <div class="photo-grid" id="photo-grid">
+          <button class="photo photo-wide" type="button" data-image="./assets/photos/photo-01.avif" aria-label="Open photograph 1"><img src="./assets/photos/photo-01.avif" alt="Black and white double exposure portrait" loading="lazy"></button>
+          <button class="photo photo-tall" type="button" data-image="./assets/photos/photo-02.avif" aria-label="Open photograph 2"><img src="./assets/photos/photo-02.avif" alt="Black and white cinematic still" loading="lazy"></button>
+          <button class="photo" type="button" data-image="./assets/photos/photo-03.avif" aria-label="Open photograph 3"><img src="./assets/photos/photo-03.avif" alt="Black and white portrait study" loading="lazy"></button>
+          <button class="photo" type="button" data-image="./assets/photos/photo-04.avif" aria-label="Open photograph 4"><img src="./assets/photos/photo-04.avif" alt="Low-key portrait in shadow" loading="lazy"></button>
+          <button class="photo photo-tall" type="button" data-image="./assets/photos/photo-05.avif" aria-label="Open photograph 5"><img src="./assets/photos/photo-05.avif" alt="Figure in dramatic studio light" loading="lazy"></button>
+          <button class="photo" type="button" data-image="./assets/photos/photo-06.avif" aria-label="Open photograph 6"><img src="./assets/photos/photo-06.avif" alt="Performance study in black and white" loading="lazy"></button>
+          <button class="photo photo-wide" type="button" data-image="./assets/photos/photo-07.avif" aria-label="Open photograph 7"><img src="./assets/photos/photo-07.avif" alt="Cinematic portrait composition" loading="lazy"></button>
+          <button class="photo" type="button" data-image="./assets/photos/photo-08.avif" aria-label="Open photograph 8"><img src="./assets/photos/photo-08.avif" alt="Projected light study" loading="lazy"></button>
+          <button class="photo" type="button" data-image="./assets/photos/photo-09.avif" aria-label="Open photograph 9"><img src="./assets/photos/photo-09.avif" alt="Minimal black and white landscape" loading="lazy"></button>
+          <button class="photo photo-tall" type="button" data-image="./assets/photos/photo-10.avif" aria-label="Open photograph 10"><img src="./assets/photos/photo-10.avif" alt="Atmospheric portrait" loading="lazy"></button>
+          <button class="photo" type="button" data-image="./assets/photos/photo-11.avif" aria-label="Open photograph 11"><img src="./assets/photos/photo-11.avif" alt="Monochrome close-up" loading="lazy"></button>
+          <button class="photo photo-wide" type="button" data-image="./assets/photos/photo-12.avif" aria-label="Open photograph 12"><img src="./assets/photos/photo-12.avif" alt="Architectural black and white still" loading="lazy"></button>
+          <button class="photo" type="button" data-image="./assets/photos/photo-13.avif" aria-label="Open photograph 13"><img src="./assets/photos/photo-13.avif" alt="Quiet cinematic landscape" loading="lazy"></button>
+          <button class="photo photo-tall" type="button" data-image="./assets/photos/photo-14.avif" aria-label="Open photograph 14"><img src="./assets/photos/photo-14.avif" alt="Documentary portrait" loading="lazy"></button>
+          <button class="photo" type="button" data-image="./assets/photos/photo-15.avif" aria-label="Open photograph 15"><img src="./assets/photos/photo-15.avif" alt="Black and white visual study" loading="lazy"></button>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-name">Jana Hojdová</p>
+      <a class="footer-email" href="mailto:jana@hojdova.cz?subject=Hello%20Jana">jana@hojdova.cz</a>
+      <nav class="social-links" aria-label="Social media">
+        <a href="https://www.csfd.cz/tvurce/102170-jana-hojdova/biografie/" target="_blank" rel="noreferrer">ČSFD</a>
+        <a href="https://www.imdb.com/name/nm7915633/" target="_blank" rel="noreferrer">IMDb</a>
+        <a href="https://www.instagram.com/janahojdova/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://vimeo.com/user17567536" target="_blank" rel="noreferrer">Vimeo</a>
+      </nav>
+      <p class="copyright">©2026 Jana Hojdová</p>
+    </footer>
+
+    <dialog class="media-dialog" id="video-dialog" aria-labelledby="video-dialog-title">
+      <div class="dialog-bar">
+        <h2 id="video-dialog-title">Film</h2>
+        <button class="dialog-close" type="button" aria-label="Close video">Close ×</button>
+      </div>
+      <div class="video-frame" id="video-frame"></div>
+    </dialog>
+
+    <dialog class="photo-dialog" id="photo-dialog" aria-label="Photograph preview">
+      <button class="dialog-close photo-close" type="button" aria-label="Close photograph">Close ×</button>
+      <img id="photo-preview" src="" alt="Enlarged portfolio photograph">
+    </dialog>
+  </body>
+</html>
